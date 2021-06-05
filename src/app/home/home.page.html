@@ -1,20 +1,87 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Calculadora
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-button color = "dark" size = "large"> 7  </ion-button>
+        </ion-col>
+
+        <ion-col>
+          <ion-button color = "dark" size = "large" > 8 </ion-button>
+        </ion-col>
+
+        <ion-col>
+          <ion-button color = "dark" size = "large" > 9 </ion-button>
+        </ion-col>
+
+        <ion-col>
+          <ion-button color = "light" size = "large" > + </ion-button>
+        </ion-col>
+      </ion-row>
+      
+      <ion-row>
+        <ion-col>
+          <ion-button color = "dark" size = "large" > 4 </ion-button>
+        </ion-col>
+
+        <ion-col>
+          <ion-button color = "dark" size = "large"  > 5 </ion-button>
+        </ion-col>
+
+        <ion-col>
+          <ion-button color = "dark" size = "large" > 6 </ion-button>
+        </ion-col>
+
+        <ion-col>
+          <ion-button color = "light" size = "large"  > - </ion-button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-button color = "dark" size = "large" > 1 </ion-button>
+        </ion-col>
+
+        <ion-col>
+          <ion-button color = "dark" size = "large"  > 2 </ion-button> 
+        </ion-col>
+
+        <ion-col>
+          <ion-button color = "dark" size = "large"  > 3 </ion-button> 
+        </ion-col>
+
+        <ion-col>
+          <ion-button color = "light" size = "large"  >  = </ion-button> 
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-button color = "light" size = "large"  > ^ </ion-button>
+        </ion-col>
+
+        <ion-col>
+          <ion-button color = "secondary" size = "large" >  0 </ion-button> 
+        </ion-col>
+
+        <ion-col>
+          <ion-button color = "light" size = "large"  >  / </ion-button> 
+        </ion-col>
+
+        <ion-col>
+          <ion-button color = "light" size = "large"  >  . </ion-button> 
+        </ion-col> 
+      </ion-row>
+    </ion-grid>
+
   </div>
 </ion-content>
