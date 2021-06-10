@@ -9,9 +9,10 @@ export class HomePage {
 
   valor = 0 ; 
 
-  ckNumero () {
+  ckNumero (numero) {
+    this.valor = numero; 
 
-    
+
   }
 
   constructor() {}
