@@ -7,12 +7,11 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  valor = "" ; 
+  valor = 0 ; 
 
   ckNumero (numero) {
-    this.valor += numero.toString (); 
-
-
+    let aux = this.valor.toString() + numero.toString(); 
+    this.valor = parseFloat (aux)
   }
 
   constructor() {}
