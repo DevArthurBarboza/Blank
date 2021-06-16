@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
 
 
 <ion-header [translucent]="true">
@@ -16,79 +16,79 @@
 
 <ion-content [fullscreen]="true">
   <div id="container">
-     <h1> {{valor}} </h1>
-     <ion-input [(ngModel)] = "valor" > </ion-input>
+    <h1> {{valor}} </h1>
+    <ion-input [(ngModel)]="valor"> </ion-input>
     <ion-grid>
       <ion-row>
         <ion-col>
-          <ion-button color = "dark" size = "large" (click) = "ckNumero(7)"> 7  </ion-button>
+          <ion-button expand="block" color="dark" size="large"  (click)="ckNumero(7)"> 7 </ion-button>
         </ion-col>
 
         <ion-col>
-          <ion-button color = "dark" size = "large" (click) = "ckNumero(8)" > 8 </ion-button>
+          <ion-button expand="block" color="dark" size="large"  (click)="ckNumero(8)"> 8 </ion-button>
         </ion-col>
 
         <ion-col>
-          <ion-button color = "dark" size = "large" (click) = "ckNumero(9)" > 9 </ion-button>
+          <ion-button expand="block" color="dark" size="large"  (click)="ckNumero(9)"> 9 </ion-button>
         </ion-col>
 
         <ion-col>
-          <ion-button color = "light" size = "large" > + </ion-button>
-        </ion-col>
-      </ion-row>
-      
-      <ion-row>
-        <ion-col>
-          <ion-button color = "dark" size = "large" > 4 </ion-button>
-        </ion-col>
-
-        <ion-col>
-          <ion-button color = "dark" size = "large"  > 5 </ion-button>
-        </ion-col>
-
-        <ion-col>
-          <ion-button color = "dark" size = "large" > 6 </ion-button>
-        </ion-col>
-
-        <ion-col>
-          <ion-button color = "light" size = "large"  > - </ion-button>
+          <ion-button expand="block" color="light" size="large"> + </ion-button>
         </ion-col>
       </ion-row>
 
       <ion-row>
         <ion-col>
-          <ion-button color = "dark" size = "large" > 1 </ion-button>
+          <ion-button expand="block" color="dark" size="large" (click)="ckNumero(4)"> 4 </ion-button>
         </ion-col>
 
         <ion-col>
-          <ion-button color = "dark" size = "large"  > 2 </ion-button> 
+          <ion-button expand="block" color="dark" size="large" (click)="ckNumero(5)"> 5 </ion-button>
         </ion-col>
 
         <ion-col>
-          <ion-button color = "dark" size = "large"  > 3 </ion-button> 
+          <ion-button expand="block" color="dark" size="large" (click)="ckNumero(6)"> 6 </ion-button>
         </ion-col>
 
         <ion-col>
-          <ion-button color = "light" size = "large"  >  = </ion-button> 
+          <ion-button expand="block" color="light" size="large"> - </ion-button>
         </ion-col>
       </ion-row>
 
       <ion-row>
         <ion-col>
-          <ion-button color = "light" size = "large"  > ^ </ion-button>
+          <ion-button expand="block" color="dark" size="large" (click)="ckNumero(1)"> 1 </ion-button>
         </ion-col>
 
         <ion-col>
-          <ion-button color = "secondary" size = "large" >  0 </ion-button> 
+          <ion-button expand="block" color="dark" size="large" (click)="ckNumero(2)"> 2 </ion-button>
         </ion-col>
 
         <ion-col>
-          <ion-button color = "light" size = "large"  >  / </ion-button> 
+          <ion-button expand="block" color="dark" size="large" (click)="ckNumero(3)"> 3 </ion-button>
         </ion-col>
 
         <ion-col>
-          <ion-button color = "light" size = "large"  >  . </ion-button> 
-        </ion-col> 
+          <ion-button expand="block" color="light" size="large"> = </ion-button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-button expand="block" color="light" size="large"> ^ </ion-button>
+        </ion-col>
+
+        <ion-col>
+          <ion-button expand="block" color="secondary" size="large" (click)="ckNumero(0)"> 0 </ion-button>
+        </ion-col>
+
+        <ion-col>
+          <ion-button expand="block" color="light" size="large"> / </ion-button>
+        </ion-col>
+
+        <ion-col>
+          <ion-button expand="block" color="light" size="large"> . </ion-button>
+        </ion-col>
       </ion-row>
     </ion-grid>
 

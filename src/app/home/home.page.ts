@@ -7,10 +7,10 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  valor = 0 ; 
+  valor = "" ; 
 
   ckNumero (numero) {
-    this.valor = numero; 
+    this.valor += numero.toString (); 
 
 
   }
