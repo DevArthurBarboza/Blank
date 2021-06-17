@@ -21,15 +21,15 @@
     <ion-grid>
       <ion-row>
         <ion-col>
-          <ion-button expand="block" color="dark" size="large"  (click)="ckNumero(7)"> 7 </ion-button>
+          <ion-button (click)="ckNumero('7')" expand="block" color="dark" size="large"  > 7 </ion-button>
         </ion-col>
 
         <ion-col>
-          <ion-button expand="block" color="dark" size="large"  (click)="ckNumero(8)"> 8 </ion-button>
+          <ion-button (click)="ckNumero('8')" expand="block" color="dark" size="large"  > 8 </ion-button>
         </ion-col>
 
         <ion-col>
-          <ion-button expand="block" color="dark" size="large"  (click)="ckNumero(9)"> 9 </ion-button>
+          <ion-button (click)="ckNumero('9')" expand="block" color="dark" size="large"  > 9 </ion-button>
         </ion-col>
 
         <ion-col>
@@ -39,15 +39,15 @@
 
       <ion-row>
         <ion-col>
-          <ion-button expand="block" color="dark" size="large" (click)="ckNumero(4)"> 4 </ion-button>
+          <ion-button (click)="ckNumero('4')" expand="block" color="dark" size="large" > 4 </ion-button>
         </ion-col>
 
         <ion-col>
-          <ion-button expand="block" color="dark" size="large" (click)="ckNumero(5)"> 5 </ion-button>
+          <ion-button (click)="ckNumero('5')" expand="block" color="dark" size="large" > 5 </ion-button>
         </ion-col>
 
         <ion-col>
-          <ion-button expand="block" color="dark" size="large" (click)="ckNumero(6)"> 6 </ion-button>
+          <ion-button (click)="ckNumero('6')" expand="block" color="dark" size="large" > 6 </ion-button>
         </ion-col>
 
         <ion-col>
@@ -57,15 +57,15 @@
 
       <ion-row>
         <ion-col>
-          <ion-button expand="block" color="dark" size="large" (click)="ckNumero(1)"> 1 </ion-button>
+          <ion-button (click)="ckNumero('1')" expand="block" color="dark" size="large" > 1 </ion-button>
         </ion-col>
 
         <ion-col>
-          <ion-button expand="block" color="dark" size="large" (click)="ckNumero(2)"> 2 </ion-button>
+          <ion-button (click)="ckNumero('2')" expand="block" color="dark" size="large" > 2 </ion-button>
         </ion-col>
 
         <ion-col>
-          <ion-button expand="block" color="dark" size="large" (click)="ckNumero(3)"> 3 </ion-button>
+          <ion-button (click)="ckNumero('3')" expand="block" color="dark" size="large"> 3 </ion-button>
         </ion-col>
 
         <ion-col>
@@ -79,7 +79,8 @@
         </ion-col>
 
         <ion-col>
-          <ion-button expand="block" color="secondary" size="large" (click)="ckNumero(0)"> 0 </ion-button>
+          <ion-button (click)="ckNumero('0')" expand="block" color="secondary" size="large" > 0 </ion-button>
+           
         </ion-col>
 
         <ion-col>
@@ -87,8 +88,18 @@
         </ion-col>
 
         <ion-col>
-          <ion-button expand="block" color="light" size="large"> . </ion-button>
+          <ion-button (click)="ckPonto()" expand="block" color="light" size="large"> . </ion-button>
         </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid> 
+      <ion-row> 
+        <ion-col>
+          <ion-button (click) = "ckCleanE()" expand = "block" color = "light" size = "large"> CE </ion-button> 
+        </ion-col>
+        <ion-col>
+           <ion-button (click) = "ckLimpar()" expand = "block" color = "light" size = "large" > C </ion-button>
+        </ion-col>     
       </ion-row>
     </ion-grid>
 

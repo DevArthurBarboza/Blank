@@ -7,13 +7,34 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  valor = 0 ; 
+  valor = "0"  
 
-  ckNumero (numero) {
-    let aux = this.valor.toString() + numero.toString(); 
-    this.valor = parseFloat (aux)
+  ckNumero(numero) {
+    if (this.valor == "0") {
+      this.valor = numero
+    }
+    else {
+      this.valor += numero;
+    }
   }
 
-  constructor() {}
+  ckCleanE() {
+    this.valor = "0"
+
+  }
+
+  ckLimpar () {
+
+  }
+
+  ckPonto () {
+    if (!this.valor.includes(".") ) {
+      this.valor+=".";
+     } 
+    }
+
+
+
+  constructor() { }
 
 }
